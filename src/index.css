@@ -1,0 +1,18 @@
+.top{
+  background: #2D3091 !important;
+}
+ul{
+  margin: 0 !important; 
+  padding: 0 !important;
+  list-style: none;
+}
+.logo {
+  width: 200px; /* smaller width */
+  height: auto; /* keep aspect ratio */
+  display: start; /* ensures block element */
+  margin: 0 auto; /* centers horizontally */
+}
+
+.top1{
+  background: black;
+}
