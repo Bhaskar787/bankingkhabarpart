@@ -1,73 +1,178 @@
-# React + TypeScript + Vite
+# 📰 BankingKhabar News Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **News Portal Application** built using **React + TypeScript + Vite** that fetches live news data from the WordPress REST API.
+The application displays news posts, categories, and detailed articles similar to a real online news platform.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* 📰 Display latest news posts from API
+* 📂 Category based news filtering
+* 📖 Dynamic article detail page
+* 🖼️ Featured images from WordPress API
+* 🗓️ Nepali Bikram Sambat date display
+* 📱 Responsive layout using Bootstrap
+* 🔗 Client-side routing with React Router
+* ⚡ Fast development using Vite
+* 🧩 Component-based architecture
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* React
+* TypeScript (TSX)
+* Vite
+* React Router DOM
+* Axios
+* Bootstrap
+* React Icons
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### API
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* WordPress REST API
+
+---
+
+## 📂 Project Structure
+
+```
+src
+│
+├── assets
+│   └── banking-logo.jpg
+│
+├── components
+│   ├── Navbar.tsx
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── PostByCat.tsx
+│   └── Top.tsx
+│
+├── pages
+│   ├── Home.tsx
+│   ├── Category.tsx
+│   └── Detail.tsx
+│
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📡 API Source
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+News data is fetched from the WordPress REST API:
+
 ```
+https://bankingkhabar.com/wp-json/wp/v2
+```
+
+Endpoints used:
+
+```
+/posts
+/posts?_embed
+/posts/{id}
+/posts?categories={id}
+/categories
+```
+
+---
+
+## 🖥️ Pages
+
+### 🏠 Home Page
+
+* Displays latest news posts
+* Featured images
+* Category sections
+
+### 📂 Category Page
+
+* Displays news filtered by category
+* Dynamic routing
+
+### 📖 Detail Page
+
+* Shows full news article
+* Displays featured image and full content
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository
+
+```
+git clone https://github.com/bhaskar787/bankingkhabarpart.git
+```
+
+Navigate into the project
+
+```
+cd bankingkhabarpart
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Start development server
+
+```
+npm run dev
+```
+
+The app will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📷 Screenshots
+
+Add screenshots of your project here.
+
+Example:
+
+```
+/screenshots/home.png
+/screenshots/category.png
+/screenshots/detail.png
+```
+
+---
+
+## 📌 Future Improvements
+
+* 🔎 News search functionality
+* 📰 Breaking news slider
+* 📄 Pagination
+* 🌙 Dark mode
+* 📊 Trending news section
+
+---
+
+## 👨‍💻 Author
+
+**Bhaskar Budha**
+
+Frontend Developer
+
+* GitHub: https://github.com/bhasakr787
+* Email: [your@email.com](mailto:your@email.com)
+
+---
+
+## ⭐ Support
+
+If you like this project, please consider giving it a ⭐ on GitHub.
