@@ -4,6 +4,10 @@ A modern **News Portal Application** built using **React + TypeScript + Vite** t
 The application displays news posts, categories, and detailed articles similar to a real online news platform.
 
 ---
+# live Demo
+<a href="https://bankingkhabarpart.vercel.app/" target="_blank">
+<img width="1666" height="872" alt="image" src="https://github.com/user-attachments/assets/dfa7b55b-704d-4130-9e35-23ce1e71d1f3" />
+</a>
 
 ## 🚀 Features
 
