@@ -172,8 +172,8 @@ Example:
 
 Frontend Developer
 
-* GitHub: https://github.com/bhasakr787
-* Email: [your@email.com](mailto:your@email.com)
+* GitHub: https://github.com/Bhaskar787
+* Portfolio: https://bhaskar-portfolio-usingmern.vercel.app/
 
 ---
 
